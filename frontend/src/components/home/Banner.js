@@ -28,7 +28,7 @@ const Banner = () => {
     >
      {
         data.map((e,i)=>(
-         <img src={e} alt='' className='banner_img'></img>   
+         <img key={i} src={e} alt='' className='banner_img'></img>   
         ))
      }
     </Carousel>
